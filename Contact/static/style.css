@@ -1,0 +1,93 @@
+* {
+    padding: 0;
+    box-sizing: border-box;
+    transition: all 0.3s ease;
+}
+
+.container {
+    margin: 70px;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    padding: 25px;
+    border: 2px solid goldenrod;
+    border-radius: 13px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    margin: 30px auto;
+    margin-bottom: 35px;
+}
+
+.card:hover {
+    background-color: rgb(187, 221, 193);
+    cursor: pointer;
+    
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+    color: black;
+}
+
+input {
+    margin: 15px;
+    width: 40%;
+    border: none;
+    border-radius: 8px;
+    padding: 25px;
+    margin: 5px;
+    background-color: rgb(240, 236, 232);
+    height: 17px;
+}
+
+.btn {
+    background-color: rgb(46, 173, 46);
+    padding: 13px;
+    border: none;
+    border-radius: 14px;
+    margin: 10px;
+    width: 90px;
+    text-align: center;
+    color: #fff;
+}
+
+.btn:hover {
+    cursor: pointer;
+    background-color: green;
+}
+
+.btn-danger {
+    background-color: rgb(214, 35, 35);
+    padding: 13px;
+    border: none;
+    border-radius: 14px;
+    margin: 10px;
+    width: 90px;
+    text-align: center;
+    color: #fff;
+}
+
+.btn-danger:hover {
+    cursor: pointer;
+    background-color: rgb(177, 9, 9);
+}
+
+.btn-sp {
+    background-color: rgb(46, 173, 46);
+    padding: 13px;
+    border: none;
+    border-radius: 14px;
+    margin: 10px;
+    width: 150px;
+    text-align: center;
+    color: #fff;
+    position: absolute;
+    right: 0;
+    top: 50px;
+}
+

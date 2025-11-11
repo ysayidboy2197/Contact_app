@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+
+{% block title %}Contacts{% endblock %}
+
+{% block content %}
+<div class="container">
+    <h1 class="my-4">Contacts</h1>
+    {% if contacts %}
+        <div class="row">
+            {% for contact in contacts %}
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">{{ contact.name }}</h5>
+                            <p class="card-text">
+                                <strong>Phone:</strong> {{ contact.phone_number }}<br>
+                                <strong>Email:</strong> {{ contact.email or 'N/A' }}<br>
+                                <strong>Address:</strong> {{ contact.address or 'N/A' }}
+                            </p>
+                            <a href="{{ url_for('view_contact', id=contact.id) }}" class="btn btn-primary">View</a>
+                        </div>
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+    {% else %}
+        <p>No contacts found.</p>
+    {% endif %}
+</div>
+{% endblock %}

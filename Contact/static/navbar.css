@@ -1,0 +1,79 @@
+/* Basic reset for consistency */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styling for the overall page */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+/* Styling for the main heading */
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #2c3e50;
+    text-align: center;
+}
+
+/* Navbar container */
+.navbar {
+    width: 100%;
+    max-width: 1200px;
+    background-color: #3498db; /* Blue background for a modern look */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    margin-bottom: 30px;
+}
+
+/* Navbar list styling */
+.navbar ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+/* Navbar list items */
+.navbar ul li {
+    flex: 1;
+    text-align: center;
+}
+
+/* Navbar links */
+.navbar ul li a {
+    display: block;
+    padding: 15px 20px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.1em;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+/* Hover effect for links */
+.navbar ul li a:hover {
+    background-color: #2980b9;
+    transform: translateY(-2px);
+}
+
+/* Active link styling (optional, add 'active' class to current link) */
+.navbar ul li a.active {
+    background-color: #1f618d;
+}
+
+/* Home section styling */
+.home {
+    font-size: 2em;
+    color: #34495e;
+    text-align: center;
+    margin-top: 50px;
+}
